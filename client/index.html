@@ -39,7 +39,6 @@
       const socket = io();
 
       const tweets = [];
-
       socket.on("connect", () => {
         console.log("Connected to server...");
       });
@@ -59,12 +58,16 @@
                 <h5 class="card-title">${tweetData.text}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${tweetData.username}</h6>
                 
-                <a class="btn btn-primary mt-3" href="https://twitter.com/${tweetData.username}/status/${tweetData.id}">
+                <a class="btn btn-primary mt-3" onclick='window.open("https://twitter.com/${tweetData.username}/status/${tweetData.id}")'>
                     <i class="fab fa-twitter"></i> Go To Tweet    
                 </a>
             </div>
         `;
-
+        function play() {
+          var audio = new Audio("https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3");
+          audio.play();
+        }
+        play();
         tweetStream.insertBefore(tweetEl, tweetStream.firstChild);
 
         // setTimeout(() => tweetEl.remove(), 5000)
