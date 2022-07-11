@@ -1,0 +1,12 @@
+html body {
+  background-color: rgb(97, 92, 92);
+}
+
+#menu {
+  border-radius: 8px;
+  padding: 3 6 3 6;
+  margin-left: 50px;
+  background-color: rgb(48, 229, 199);
+  display: none;
+  /* TODO */
+}

@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 const server = http.createServer(app);
-
+app.use(express.static("public"));
 const io = socketIo(server);
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../", "client", "index.html"));
@@ -25,7 +25,7 @@ const rules = [
       OR from:rarebanks
       OR from:myoperaa
       OR from:trader1sz
-      OR from:LSDinmycoffee
+      OR from:allseeingeyes
       OR from:Trader_XO
       OR from:pierre_crypt0
       OR from:Ninjascalp
