@@ -35,7 +35,7 @@ const rules = [
       OR from:mgvcapital
       OR from:IrnCrypt
       OR from:Tradermayne
-      OR from:wytetrades)`,
+      OR from:wytetrades) has:media`,
   },
 ];
 
