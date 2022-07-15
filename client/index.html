@@ -56,12 +56,12 @@
         const tweetEl = document.createElement("div");
         tweetEl.className = "card my-4";
         tweetEl.innerHTML = `
-            <div class="card-body">
+            <div class="element-container" onclick="stopBlink(this)">
                 <h5 class="card-title">${tweetData.text}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">${tweetData.username}</h6>
-                
+
                 <a class="btn btn-primary mt-3" onclick='window.open("https://twitter.com/${tweetData.username}/status/${tweetData.id}")'>
-                    <i class="fab fa-twitter"></i> Go To Tweet    
+                    <i class="fab fa-twitter"></i> Go To Tweet
                 </a>
             </div>
         `;
@@ -70,10 +70,12 @@
           audio.play();
         }
         play();
+
         tweetStream.insertBefore(tweetEl, tweetStream.firstChild);
 
         // setTimeout(() => tweetEl.remove(), 5000)
       });
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

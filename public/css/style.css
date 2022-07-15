@@ -10,3 +10,31 @@ html body {
   display: none;
   /* TODO */
 }
+
+@-webkit-keyframes blackWhite {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  51% {
+    background-color: red;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.element-container {
+  padding: 10px;
+  background-color: white;
+  -webkit-animation-name: blackWhite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+}
+
+.element-container-new {
+  padding: 10px;
+  background-color: white;
+}

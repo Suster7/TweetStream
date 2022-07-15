@@ -25,10 +25,8 @@ const rules = [
       OR from:rarebanks
       OR from:myoperaa
       OR from:trader1sz
-      OR from:allseeingeyes
       OR from:Trader_XO
       OR from:pierre_crypt0
-      OR from:Ninjascalp
       OR from:FmgStacker
       OR from:GirthyRibz
       OR from:FRAKTALZ
@@ -37,7 +35,7 @@ const rules = [
       OR from:mgvcapital
       OR from:IrnCrypt
       OR from:Tradermayne
-      OR from:wytetrades) has:media`,
+      OR from:wytetrades)`,
   },
 ];
 
